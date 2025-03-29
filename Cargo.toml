@@ -1,0 +1,11 @@
+[package]
+name = "rafter_lib"
+version = "0.1.0"
+edition = "2024"
+description = "A bunch of useful functions for working with rafters in Rust."
+authors = ["David Skyberg <david.skyberg@example.com>"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+pythagoras = {git = "https://github.com/dskyberg/pythagoras.git"}
