@@ -1,4 +1,6 @@
-#[derive(Debug)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Deserialize, Serialize)]
 pub struct RafterInput {
     /// The rise in the rise over run calculation. Such as the 4 in 4:12
     pub pitch: u32,

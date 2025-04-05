@@ -1,4 +1,4 @@
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
 use crate::RafterInput;
 use crate::beam::Beam;
@@ -7,7 +7,7 @@ use crate::right_angle_like::RightAngleLike;
 use crate::tail::Tail;
 use crate::utils::*;
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Rafter {
     pub width: f32,
     pub rise: f32,
