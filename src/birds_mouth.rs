@@ -1,9 +1,9 @@
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
 use crate::right_angle_like::RightAngleLike;
 use crate::{RafterInput, pitch_to_angle, toa};
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct BirdsMouth {
     /// The rise of the triangle
     heel: f32,
